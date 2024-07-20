@@ -1,0 +1,24 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "description": "para consimir los mesajes del broker",
+  "main": "app.ts",
+  "scripts": {
+    "start": "ts-node-dev app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "albertosmc",
+  "license": "ISC",
+  "dependencies": {
+    "@types/isomorphic-fetch": "^0.0.39",
+    "amqplib": "^0.10.3",
+    "isomorphic-fetch": "^3.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.5",
+    "@types/node-fetch": "^2.6.11",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0"
+  }
+}
