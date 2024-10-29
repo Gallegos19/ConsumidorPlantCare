@@ -6,7 +6,7 @@ async function connect() {
 
     while (true) {
         try {
-            const connection = await amqp.connect('amqp://plantcare-rabbit.integrador.xyz/');
+            const connection = await amqp.connect('amqp://34.195.102.87/');
             const channel = await connection.createChannel();
 
             // Declaramos la cola desde la que vamos a consumir
@@ -42,7 +42,7 @@ async function connect() {
                         };
 
                         // Enviar el mensaje a una ruta específica
-                        await enviarMensaje('http://44.197.7.97:8081/api/plantRecord', data);
+                        await enviarMensaje('http://34.204.57.249:8081/api/plantRecord', data);
 
                         // Confirmar que hemos procesado el mensaje
                         channel.ack(msg);
